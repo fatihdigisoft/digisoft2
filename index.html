@@ -3,15 +3,44 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Digisoft Demo</title>
+    <title>Digisoft Dosya Merkezi</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin-top: 100px; background-color: #f0f0f0; }
-        h1 { color: #2c3e50; }
-        p { color: #34495e; }
+        body { font-family: Arial, sans-serif; background: #1b1b1b; color: #f1f1f1; margin: 0; padding: 0; }
+        header { background: #facc15; color: #000; padding: 20px; font-size: 24px; font-weight: bold; }
+        .search-bar { text-align: center; padding: 30px 20px; }
+        .search-bar input { width: 60%; padding: 12px; font-size: 16px; border-radius: 5px; border: none; }
+        .modules { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; padding: 20px; }
+        .module-card { background: #2c2c2c; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px #0003; }
+        .module-card h3 { color: #facc15; margin-top: 0; }
+        .coming-soon { background: #333; text-align: center; padding: 20px; margin-top: 30px; font-size: 14px; color: #aaa; }
+        .filter-bar { text-align: center; margin-top: 10px; }
+        .filter-bar button { background: #333; color: #f1f1f1; border: none; padding: 10px 20px; margin: 5px; border-radius: 5px; cursor: pointer; }
+        .filter-bar button:hover { background: #facc15; color: #000; }
     </style>
 </head>
 <body>
-    <h1>Digisoft v2 Yayında!</h1>
-    <p>Hoş geldin reis. Projen başarıyla yüklendi.</p>
+    <header>DIGISOFT</header>
+    <div class="search-bar">
+        <input type="text" placeholder="Dosya Ara...">
+        <div class="filter-bar">
+            <button>ECU</button>
+            <button>Gösterge</button>
+            <button>Bike</button>
+            <button>IMMO</button>
+            <button>TCU</button>
+            <button>Steering</button>
+        </div>
+    </div>
+    <div class="modules">
+        <div class="module-card"><h3>ECU Modülü</h3><p>Dosyalar: 12</p></div>
+        <div class="module-card"><h3>Gösterge Modülü</h3><p>Dosyalar: 8</p></div>
+        <div class="module-card"><h3>Bike Modülü</h3><p>Dosyalar: 4</p></div>
+        <div class="module-card"><h3>IMMO Modülü</h3><p>Dosyalar: 10</p></div>
+        <div class="module-card"><h3>TCU Modülü</h3><p>Dosyalar: 6</p></div>
+        <div class="module-card"><h3>Steering Modülü</h3><p>Dosyalar: 3</p></div>
+    </div>
+    <div class="coming-soon">
+        DPF / EGR / AdBlue modülleri yakında aktif edilecek. Lisans sistemi ve dump paylaşım altyapısı hazırlanıyor.
+    </div>
 </body>
 </html>
